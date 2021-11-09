@@ -1,3 +1,199 @@
-body {
-    background-color: red;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-color: #231F20;
+    --brown-color: #bb4030;
+    --blue-color: #7ebdc2;
+    --tan-color: #f3dfa2;
+    --light-color: #efe6dd;
+}
+
+a, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    background-color: var(--dark-color);
+    display: flex;
+    justify-content: space-between;
+    color: var(--light-color);
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bottle {
+    stroke: var(--blue-color);
+}
+
+.logo-title p {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 1.1px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 1.1px;
+    padding: 0 1rem;
+    transition: all .3s;
+}
+
+.nav-link:hover {
+    color: var(--tan-color);
+}
+
+.hero {
+    height: 105vh;
+    background-image: url('../images/hero-background.jpg');
+    background-position: center;
+    background-size: cover;
+    color: var(--light-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+}
+
+.main-section {
+    width: 80%;
+    margin-inline: auto;
+    margin-block: 6rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: var(--brown-color);
+    width: 30%;
+    overflow: hidden;
+    text-align: center;
+    color: var(--light-color)
+}
+
+#whiskey-card {
+    background-image: url('../images/whiskey-card.jpg');
+}
+
+#hotdog-card {
+    background-image: url('../images/hotdog-card.jpg');
+}
+
+#beer-card {
+    background-image: url('../images/beer-card.jpg');
+}
+
+.card-image {
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-info {
+    padding: 1rem;
+}
+
+h2 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+.section-image {
+    aspect-ratio: 2 / 1;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.split {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+}
+
+.section-info {
+    width: 50%;
+    background-color: var(--brown-color);
+    border-radius: 10px;
+    padding: 2rem;
+    height: fit-content;
+    color: var(--light-color);
+}
+
+.whiskey .section-info {
+    transform: translateX(-5rem);
+}
+
+.hotdogs .section-info {
+    transform: translateX(5rem);
+}
+
+footer {
+    background-color: var(--dark-color);
+    padding: 1rem;
+    justify-content: space-between;
+    color: var(--light-color);
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-social {
+    stroke: var(--blue-color);
+    margin-inline: .5rem;
+}
+
+.contact-info {
+    text-align: right;
+    font-size: 1.1rem;
+    letter-spacing: 1.1px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
